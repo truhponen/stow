@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Kotimme
+Comment=Kotimme
+Exec=omarchy-launch-webapp https://homepage.kotimme.cc
+Terminal=false
+Type=Application
+Icon=/home/tuomo/.local/share/applications/icons/Kotimme.png
+StartupNotify=true

@@ -1,0 +1,15 @@
+#!/bin/sh
+
+for window_address in $(hyprctl clients -j | jq -r '.[].address'); do
+    hyprctl dispatch movetoworkspacesilent 4, address:${window_address}
+done
+
+for window_address in $(hyprctl clients -j | jq -r '.[] | select( .class=="firefox") | .address'); do
+    hyprctl dispatch movetoworkspacesilent 3, address:${window_address}
+done
+
+hyprctl dispatch movetoworkspacesilent 1, class:Spotify
+hyprctl dispatch movetoworkspacesilent 2, class:'chrome-homeassistant.kotimme.*'
+hyprctl dispatch movetoworkspacesilent 2, class:'chrome-kubernetes.kotimme.*'
+hyprctl dispatch movetoworkspacesilent 2, class:'chrome-freshrss.kotimme.*'
+hyprctl dispatch movetoworkspacesilent 5, class:'chrome-lets-go-further.kotimme.*'

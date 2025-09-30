@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Home Assistant
+Comment=Home Assistant
+Exec=omarchy-launch-webapp https://homeassistant.kotimme.cc/auth/oidc/welcome
+Terminal=false
+Type=Application
+Icon=/home/tuomo/.local/share/applications/icons/Home Assistant.png
+StartupNotify=true

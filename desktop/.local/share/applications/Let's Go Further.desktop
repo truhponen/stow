@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Let's Go Further
+Comment=Let's Go Further
+Exec=omarchy-launch-webapp https://lets-go-further.kotimme.cc/
+Terminal=false
+Type=Application
+Icon=/home/tuomo/.local/share/applications/icons/Let's Go Further.png
+StartupNotify=true

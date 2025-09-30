@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Kubernetes
+Comment=Kubernetes
+Exec=omarchy-launch-webapp https://kubernetes.kotimme.cc/
+Terminal=false
+Type=Application
+Icon=/home/tuomo/.local/share/applications/icons/Kubernetes.png
+StartupNotify=true

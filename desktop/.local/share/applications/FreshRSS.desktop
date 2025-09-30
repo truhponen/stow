@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=FreshRSS
+Comment=FreshRSS
+Exec=omarchy-launch-webapp https://freshrss.kotimme.cc/
+Terminal=false
+Type=Application
+Icon=/home/tuomo/.local/share/applications/icons/FreshRSS.png
+StartupNotify=true
