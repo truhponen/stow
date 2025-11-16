@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=NetworkManager
+Comment=NetworkManager
+Exec=$TERMINAL --class=TUI.float -e nmtui
+Terminal=false
+Type=Application
+Icon=/home/tuomo/.local/share/applications/icons/NetworkManager.png
+StartupNotify=true

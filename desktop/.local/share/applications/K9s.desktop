@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=K9s
+Comment=K9s
+Exec=$TERMINAL --class=TUI.tile -e k9s -n prod
+Terminal=false
+Type=Application
+Icon=/home/tuomo/.local/share/applications/icons/K9s.png
+StartupNotify=true
