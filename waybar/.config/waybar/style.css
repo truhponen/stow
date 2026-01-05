@@ -24,6 +24,11 @@
   padding: 0 6px;
   margin: 0 1.5px;
   min-width: 9px;
+  font-weight: 300;
+}
+
+#workspaces button.active {
+  font-weight: 900;
 }
 
 #workspaces button.empty {
@@ -33,11 +38,19 @@
 #cpu,
 #battery,
 #pulseaudio,
-#custom-omarchy,
 #custom-screenrecording-indicator,
 #custom-update {
   min-width: 12px;
   margin: 0 7.5px;
+}
+
+#cpu {
+  font-size: 13px;
+}
+
+#custom-omarchy {
+  padding: 0 6 0 2px;
+  font-size: 20px;
 }
 
 #tray {
@@ -53,7 +66,7 @@
 }
 
 #custom-expand-icon {
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 tooltip {

@@ -2,7 +2,7 @@
 Version=1.0
 Name=Gmail
 Comment=Gmail
-Exec=omarchy-launch-webapp https://mail.google.com
+Exec=omarchy-launch-or-focus-webapp gmail https://mail.google.com
 Terminal=false
 Type=Application
 Icon=/home/tuomo/.local/share/applications/icons/Gmail.png

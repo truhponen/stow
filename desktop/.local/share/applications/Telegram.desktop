@@ -2,7 +2,7 @@
 Version=1.0
 Name=Telegram
 Comment=Telegram
-Exec=omarchy-launch-webapp https://web.telegram.org/k/
+Exec=omarchy-launch-or-focus-webapp chrome-web.telegram.org__k_-Default https://web.telegram.org/k/
 Terminal=false
 Type=Application
 Icon=/home/tuomo/.local/share/applications/icons/Telegram.png

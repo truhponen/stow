@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# Wait for application to open 
+sleep 20s
+
+# Move everything to workspace 10
+for window_address in $(hyprctl clients -j | jq -r '.[].address'); do
+    hyprctl dispatch movetoworkspacesilent 10, address:${window_address}
+done
+
+# Move to workspace 1
+hyprctl dispatch movetoworkspacesilent 1, class:'spotify'
+# hyprctl dispatch movetoworkspacesilent 1, class:'chrome-mail.google.*'
+# hyprctl dispatch movetoworkspacesilent 1, class:'chrome-calendar.google.*'
+
+# Move to workspace 2
+hyprctl dispatch movetoworkspacesilent 2, class:'chrome-homeassistant.kotimme.*'
+# hyprctl dispatch movetoworkspacesilent 2, class:'chrome-kubernetes.kotimme.*'
+# hyprctl dispatch movetoworkspacesilent 2, class:'chrome-freshrss.kotimme.*'
+
+# Move to workspace 3
+for window_address in $(hyprctl clients -j | jq -r '.[] | select( .class=="firefox") | .address'); do
+    hyprctl dispatch movetoworkspacesilent 3, address:${window_address}
+done
+
+# Move to workspace 4
+for window_address in $(hyprctl clients -j | jq -r '.[] | select( .class=="chrome-youtube.com__-Default") | .address'); do
+    hyprctl dispatch movetoworkspacesilent 4, address:${window_address}
+done
+
+# Move to workspace 5
+for window_address in $(hyprctl clients -j | jq -r '.[] | select( .class=="Alacritty") | .address'); do
+    hyprctl dispatch movetoworkspacesilent 5, address:${window_address}
+done
+
+# Move to workspace 6
+hyprctl dispatch movetoworkspacesilent 6, class:'chrome-lets-go-further.kotimme.*'
